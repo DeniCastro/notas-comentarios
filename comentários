@@ -1,1 +1,106 @@
+// criando funções
+
+function calPerQua() {
+  let lado = prompt('Digite o tamanho do lado: ')
+  let perimetro = lado * 4
+  alert('O perimetro ' + perimetro)
+}
+
+calPerQua()
+
+// criando objetos
+
+//nome completo; idade; data de nascimento; estilo de musica preferido;
+
+var eu {}
+
+
+
+/ Atribuindo objetos a classes
+
+/ nome completo - idade - data de nascimento - estilo de musica - tem carro - tem filhos 
+
+class Pessoa {
+  nomeCompleto
+  nome
+  idade
+  data
+  estiloMusica
+  carros
+  filhos
+}
+var eu = new Pessoa()
+eu.nome = 'Deni'
+eu.nomeCompleto ='Deni Castro de Oliveira'
+eu.idade = 25
+eu.data = '04-01-1997'
+eu.estiloMusica = 'Dubstep'
+eu.carros = false
+eu.filhos = false
+
+let vc = new Pessoa()
+vc.nome = 'jxnglejxice'
+console.log(vc)
+alert(vc.nome)
+/---------------------
+class Pessoa {
+  
+  nome
+  anoNascimento
+  calcularIdade(anoAtual) {
+    return  2022 - this.anoNascimento
+  }
+  
+}
+var eu = new Pessoa()
+eu.nomeCompleto ='Deni Castro de Oliveira'
+eu.anoNascimento = 1997
+var idade = eu.calcularIdade(2022)
+console.log(idade)
+/----------------------------------
+
+class Pessoa {
+  
+  nome
+  anoNascimento
+  idade
+  calcularIdade(anoAtual) {
+    this.idade = anoAtual - this.anoNascimento
+  }
+  
+}
+var eu = new Pessoa()
+eu.nomeCompleto ='Deni Castro de Oliveira'
+eu.anoNascimento = 1997
+eu.calcularIdade(2022)
+autenticar(eu)
+
+function autenticar(pessoa){
+  console.log(pessoa)
+}
+
+/------------------------
+class Pessoa {
+  
+  nomeCompleto
+  anoNascimento
+  idade
+  
+  constructor(nome, anoNascimento) {
+    this.nomeCompleto = nome
+    this.anoNascimento = anoNascimento
+    this.calcularIdade()
+    
+  }
+  
+  calcularIdade(anoAtual) {
+    this.idade = 2022 - this.anoNascimento
+  }
+} 
+
+let eu = new Pessoa("Deni", 1997)          //Estanciando objeto da classe
+console.log(eu)
+
+let vc = new Pessoa("JxngleJxice", 1779)
+console.log(vc)
 
