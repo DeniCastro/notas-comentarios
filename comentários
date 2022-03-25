@@ -1,27 +1,18 @@
-// criando funções
+// Funcção para calcular o quadrado de um número:
 
-function calPerQua() {
-  let lado = prompt('Digite o tamanho do lado: ')
-  let perimetro = lado * 4
-  alert('O perimetro ' + perimetro)
-}
-
-calPerQua()
-
-// criando objetos
-
-//nome completo; idade; data de nascimento; estilo de musica preferido;
-
-var eu {}
+function calcularQuadrado() {
+    num = prompt('Digite um número para ver o seu quadrado: ')
+    quadrado = num * num
+    alert('O resultado é: ' + quadrado)
+  }
+calcularQuadrado();
 
 
 
-/ Atribuindo objetos a classes
 
-/ nome completo - idade - data de nascimento - estilo de musica - tem carro - tem filhos 
+/ Atribuindo objetos a classes:  nome completo - idade - data de nascimento - estilo de musica - tem carro - tem filhos 
 
 class Pessoa {
-  nomeCompleto
   nome
   idade
   data
@@ -44,7 +35,6 @@ console.log(vc)
 alert(vc.nome)
 /---------------------
 class Pessoa {
-  
   nome
   anoNascimento
   calcularIdade(anoAtual) {
