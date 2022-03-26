@@ -150,3 +150,5 @@ joaozinho.calcularTotalDeVendas()
 joaozinho.calcularComissao()
 
 console.log(joaozinho)
+
+
