@@ -94,3 +94,59 @@ console.log(eu)
 let vc = new Pessoa("JxngleJxice", 1779)
 console.log(vc)
 
+
+class Vendedor {
+  nome
+  cargo
+  vendas = []
+  comissao = 0
+  totalVendas = 0
+  
+  calcularComissao() {
+    this.comissao = this.totalVendas * this.cargo.percentual
+  }
+
+  calcularTotalDeVendas() {
+    this.vendas.forEach((venda) => {
+      this.totalVendas = this.totalVendas + venda.valor
+    })
+    
+    this.totalVendas = this.totalVendas.toFixed(2)
+  }
+}
+
+class Venda {
+  valor
+  
+  constructor(valor) {
+    this.valor = valor
+  }
+}
+
+class Cargo {
+  nome
+  percentual
+}
+
+var vendedor1 = new Cargo()
+vendedor1.nome = "Vendedor Nível 1"
+vendedor1.percentual = 0.05
+
+var vendedor2 = new Cargo()
+vendedor2.nome = "Vendedor Nível 2"
+vendedor2.percentual = 0.1
+
+var joaozinho = new Vendedor()
+joaozinho.nome = "João"
+joaozinho.cargo = vendedor1
+
+var venda1 = new Venda(10.50)
+var venda2 = new Venda(9.50)
+
+joaozinho.vendas.push(venda1)
+joaozinho.vendas.push(venda2)
+
+joaozinho.calcularTotalDeVendas()
+joaozinho.calcularComissao()
+
+console.log(joaozinho)
