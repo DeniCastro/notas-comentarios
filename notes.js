@@ -147,6 +147,23 @@ var venda2 = new Venda(9.50)
 joaozinho.vendas.push(venda1)
 joaozinho.vendas.push(venda2)
 
+exibirNumerosPrimos(100);
+
+function exibirNumerosPrimos(limite){
+    for(let numero = 2; numero <= limite; numero++){
+        let ehPrimo = true;
+
+        for (let divisor =2; divisor < numero; divisor++){
+            if(numero % divisor === 0) {
+                ehPrimo = false;
+                break;
+            }
+        }
+
+        if (ehPrimo) console.log(numero);
+    }
+}
+
 joaozinho.calcularTotalDeVendas()
 joaozinho.calcularComissao()
 
@@ -178,3 +195,52 @@ function calcularMedia(array) {
     }
     const media = soma / (array.length);
 }
+
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// exibir todos os numeros primos até o da função.
+exibirNumerosPrimos(100);
+
+function exibirNumerosPrimos(limite){
+    for(let numero = 2; numero <= limite; numero++){
+        let ehPrimo = true;
+
+        for (let divisor =2; divisor < numero; divisor++){
+            if(numero % divisor === 0) {
+                ehPrimo = false;
+                break;
+            }
+        }
+
+        if (ehPrimo) console.log(numero);
+    }
+}
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+/* Switch Case:
+let permissao;
+permissao = 'comum';
+switch (permissao) {
+    case 'comum':
+    console.log('Usuário comum.');
+    break;
+
+    case 'gerente':
+    console.log('Usuário gerente');
+    break
+    case 'diretor':
+    console.log('Usuário diretor.');
+    break
+    
+    default:
+    console.log('Usuário não reconhecido!');
+
+    } 
+*/
+// for/loop:
+
+for(let i = 5; i >= 1; i--) {
+    if(i % 2 != 0){ 
+        console.log(i);
+    }
+}
+
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
