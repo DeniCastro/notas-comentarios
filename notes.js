@@ -10,7 +10,8 @@ calcularQuadrado();
 
 
 
-/ Atribuindo objetos a classes:  nome completo - idade - data de nascimento - estilo de musica - tem carro - tem filhos 
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Atribuindo objetos a classes:  nome completo - idade - data de nascimento - estilo de musica - tem carro - tem filhos 
 
 class Pessoa {
   nome
@@ -47,7 +48,7 @@ eu.nomeCompleto ='Deni Castro de Oliveira'
 eu.anoNascimento = 1997
 var idade = eu.calcularIdade(2022)
 console.log(idade)
-/----------------------------------
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 class Pessoa {
   
@@ -69,7 +70,7 @@ function autenticar(pessoa){
   console.log(pessoa)
 }
 
-/------------------------
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 class Pessoa {
   
   nomeCompleto
