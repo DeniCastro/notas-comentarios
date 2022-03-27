@@ -215,7 +215,8 @@ function exibirNumerosPrimos(limite){
     }
 }
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-/* Switch Case:
+// Switch Case:
+
 let permissao;
 permissao = 'comum';
 switch (permissao) {
@@ -234,7 +235,7 @@ switch (permissao) {
     console.log('Usuário não reconhecido!');
 
     } 
-*/
+
 // for/loop:
 
 for(let i = 5; i >= 1; i--) {
@@ -244,3 +245,20 @@ for(let i = 5; i >= 1; i--) {
 }
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Factory Function
+
+const celular = {
+    marcaCelular: 'ASUS',
+    tamanhoTela: {
+        vertical : 155,
+        horizontal : 75,
+    },
+    capacidadeBateria: 5000,
+    ligar : function() {
+        console.log("Fazendo ligação...")
+    }
+}
+
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Constructor function:
+
