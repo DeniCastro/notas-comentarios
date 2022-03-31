@@ -38,6 +38,7 @@ class Venda{
 class Cargo{
     nome
     percentual
+// Fecha a classe
 }
 
 // cria objetos vendedor 1 e 2, com seus percentuais:
@@ -59,7 +60,7 @@ deni.cargo = vendedor2
 var venda1 = new Venda(150);
 var venda2 = new Venda(295.01);
 
-// Utiliza o push para o vendedor equivalente (v1, v2, etc)
+// O vendedor recebe push para o array das vendas(v1, v2, etc)
 deni.vendas.push(venda1);
 deni.vendas.push(venda2);
 
@@ -69,3 +70,11 @@ deni.calcularComissao();
 
 // Exibe:
 console.log(deni);
+
+/*
+São 3 classes(Vendedor, Cargo e Venda);
+A maior é a do vendedor, que possui 7 membros, desses 7, 2 são métodos.
+A classe venda, possui 1 membro(valor), que possui o constructor e muda dependendo da venda feita
+A classe Cargo, possui 2 membros, que receberão o nome do cargo e o bônus da venda
+
+*/ 
