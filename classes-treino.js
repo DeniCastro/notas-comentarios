@@ -16,10 +16,9 @@ class Vendedor{
         this.vendas.forEach((venda)=>{
             this.totalVendas = this.totalVendas + venda.valor
         })
-
-    // Finaliza o total de vendas com a formatação "2fxd"
         this.totalVendas = this.totalVendas.toFixed(2)
-    }
+    // Fecha o método(usou toFixed(2))    
+    } 
 // Fecha a classe
 }
 
